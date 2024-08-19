@@ -27,3 +27,10 @@ for (let i = 0; i < emailAuthorized.length; i++) {
         break;
     }
 }
+//Mostro il  risultato in pagina
+if (emailFound) {
+    notificationElement.innerHTML = "Accesso autorizzato. Benvenuto!";
+} else {
+    notificationElement.innerHTML = "Accesso negato. Email non autorizzata.";
+}
+});
