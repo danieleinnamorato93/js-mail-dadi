@@ -3,7 +3,7 @@ console.log('JS OK')
 const emailAdd=document.getElementById('email');
 const logBtn=document.getElementById('log-btn');
 const notificationElement=document.getElementById('notification');
-console.log('email' , 'log-btn', 'notification')
+console.log('email:', emailAdd, 'log-btn:', logBtn, 'notification:', notificationElement);
 
 //Aggiungo le mail autorizzate
 const emailAuthorized = [
@@ -11,3 +11,19 @@ const emailAuthorized = [
     "giovanni.moretti@wow.com" ,
     "luca.rossi@wow.com" ,
 ];
+console.log("emailAuthorized", emailAuthorized)
+
+//aggiugo evento al bottone
+logBtn.addEventListener('click', function() {
+    const emailUser = emailAdd.value.trim();
+    
+    let emailFound = 0;
+    
+//Faccio un ciclo For per vedere se l'email è autorizzata
+
+for (let i = 0; i < emailAuthorized.length; i++) {
+    if (emailUser === emailAuthorized[i]) {
+        emailFound = 1;
+        break;
+    }
+}
