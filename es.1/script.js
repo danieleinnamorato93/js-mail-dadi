@@ -19,3 +19,7 @@ if(rollPlayer > rollCpu) {
     result = "Pari!";
 }
 console.log('result' ,  result)
+
+//mostro il risultato in pagina
+
+document.getElementById('result').innerHTML = result;
