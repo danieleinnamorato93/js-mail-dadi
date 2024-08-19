@@ -10,7 +10,7 @@ const rollCpu = Math.floor(Math.random() *20 ) +1 ;
 document.getElementById("player").innerHTML = `Lancio player 1: ${rollPlayer}`;
 document.getElementById("cpu").innerHTML = `Lancio Cpu: ${rollCpu}`;
 
-//Stabilisco il vincitore
+//Stabilisco il vincitore e lo mostro in console
 if(rollPlayer > rollCpu) {
     result = "Congratulazioni, hai vinto!";
 } else if(rollPlayer < rollCpu) {
