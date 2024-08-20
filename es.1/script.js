@@ -3,8 +3,8 @@ console.log('JS OK')
 let result = null;
 
 //genero lanci
-const rollPlayer = Math.floor(Math.random() *20 ) +1 ;
-const rollCpu = Math.floor(Math.random() *20 ) +1 ;
+const rollPlayer = Math.floor(Math.random() *6 ) +1 ;
+const rollCpu = Math.floor(Math.random() *6 ) +1 ;
 
 //mostro in console
 document.getElementById("player").innerHTML = `Lancio player 1: ${rollPlayer}`;
